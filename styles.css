@@ -1,13 +1,7 @@
+/*TODO: Clean up code */
 body {
   background: rgb(61, 90, 128);
 }
-
-/*
-.center-column {
-  background: rgb(224, 251, 252);
-  width: 50%;
-  margin: auto;
-}*/
 
 .content {
   width: 80%;
@@ -130,7 +124,7 @@ ul {
 
 li {
   position: relative;
-  padding-right: 50px; /* Adjust as needed */
+  padding-right: 50px;
   margin: 5%;
 }
 
@@ -145,10 +139,11 @@ li.excel::after {
   top: 50%;
   transform: translateY(-50%);
   display: inline-block;
-  width: 40px; /* Adjust as needed */
-  height: 40px; /* Adjust as needed */
+  width: 40px;
+  height: 40px;
   background: url("excel.png") no-repeat;
   background-size: contain;
+  margin-right: 10px;
 }
 
 li.access {
@@ -166,4 +161,5 @@ li.access::after {
   height: 40px; /* Adjust as needed */
   background: url("access.png") no-repeat;
   background-size: contain;
+  margin-right: 10px;
 }
