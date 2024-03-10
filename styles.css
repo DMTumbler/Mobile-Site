@@ -89,6 +89,7 @@ hr {
     0 7px 5px #666;
   background-color: #b6d094;
   transform: translateY(4px);
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 600px) {
@@ -111,6 +112,12 @@ button:active {
   transform: translateY(4px);
 }
 
+button:hover {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 a:link,
 a:visited {
   color: black;
@@ -123,65 +130,22 @@ a:hover {
   color: rgb(61, 90, 128);
 }
 
-ul {
-  list-style-type: none;
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px; /* Adjust as needed */
 }
 
-li.excel {
-  position: relative;
-  margin-right: 70px;
-  margin-bottom: 5%;
+.grid-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-right: 20px;
 }
 
-li.excel::after {
-  content: "";
-  position: absolute;
-  right: -50;
-  top: 50%;
-  transform: translateY(-50%);
-  display: inline-block;
-  width: 40px; /* Adjust as needed */
-  height: 40px; /* Adjust as needed */
-  background: url("excel.png") no-repeat;
-  background-size: contain;
-  margin-right: 10px;
-}
-
-li.access {
-  position: relative;
-  margin-right: 70px;
-  margin-bottom: 5%;
-}
-li.access::after {
-  content: "";
-  position: absolute;
-  right: -50;
-  top: 50%;
-  transform: translateY(-50%);
-  display: inline-block;
-  width: 40px; /* Adjust as needed */
-  height: 40px; /* Adjust as needed */
-  background: url("access.png") no-repeat;
-  background-size: contain;
-  margin-right: 10px;
-}
-
-li.word {
-  position: relative;
-  margin-right: 70px;
-  margin-bottom: 5%;
-}
-
-li.word::after {
-  content: "";
-  position: absolute;
-  right: -50;
-  top: 50%;
-  transform: translateY(-50%);
-  display: inline-block;
-  width: 40px; /* Adjust as needed */
-  height: 40px; /* Adjust as needed */
-  background: url("word.png") no-repeat;
-  background-size: contain;
-  margin-right: 10px;
+.grid-image {
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-items: center;
 }
