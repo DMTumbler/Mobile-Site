@@ -8,29 +8,53 @@ body {
   width: 50%;
   margin: auto;
 }*/
+
+.content {
+  width: 80%;
+  margin: auto;
+  background: rgb(135, 211, 248);
+  box-shadow:
+    -5px 0px 7px 1px #333,
+    5px 0px 7px 1px #333;
+}
+
 hr {
   height: 2px;
   background-color: #902d41;
   border-color: #902d41;
-  width: 70%;
 }
+
 .container {
   display: flex;
-  align-items: center;
 }
+
 hr {
   height: 2px;
   background-color: brown;
   border-color: brown;
+  margin-top: 30px;
+  box-shadow: 0 1px 2px 1px #333;
+}
+.featured-image {
+  margin: auto;
+  width: 50%;
+  float: right;
+  max-width: 600px;
+  margin-top: -30px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border: 3px solid #902d41;
+  border-radius: 5px;
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.23),
+    0 6px 6px rgba(0, 0, 0, 0.19);
 }
 
 .logo {
   float: left;
 }
 
-.menu-ribbon {
-  background: rgb(135, 211, 248);
-  width: 70%;
+.ribbon {
   margin-bottom: -1%;
   margin-top: auto;
   margin-left: auto;
@@ -39,23 +63,85 @@ hr {
   text-align: right;
 }
 
+.icons {
+  max-width: 100px;
+}
+
 .buttons {
   padding-top: 10%;
 }
 
 .main-text {
-  width: 70%;
-  margin: auto;
-  background: rgb(135, 211, 248);
-  padding: 1%;
+  margin: 2%;
+  font-size: 18px;
 }
 
 .article-head {
-  background: rgb(135, 211, 248);
   font-size: 32px;
-  width: 70%;
-  margin-top: auto;
-  margin-left: auto;
+  margin-top: 2%;
+  margin-left: 2%;
   margin-right: auto;
-  padding: 1%;
+  margin-bottom: -10px;
+}
+
+button {
+  border: none;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  box-shadow:
+    0 5px #666,
+    0 7px 5px #666;
+  background-color: #b6d094;
+  transform: translateY(4px);
+}
+@media screen and (max-width: 600px) {
+  button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+a:link,
+a:visited {
+  color: black;
+}
+
+a:active {
+  color: #902d41;
+}
+a:hover {
+  color: rgb(61, 90, 128);
+}
+
+ul {
+  list-style-type: none;
+  width: 45%;
+}
+
+li {
+  position: relative;
+  padding-right: 50px; /* Adjust as needed */
+  margin: 5%;
+}
+
+li::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  width: 40px; /* Adjust as needed */
+  height: 40px; /* Adjust as needed */
+  background: url("excel.png") no-repeat;
+  background-size: contain;
 }
