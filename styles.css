@@ -150,3 +150,20 @@ li.excel::after {
   background: url("excel.png") no-repeat;
   background-size: contain;
 }
+
+li.access {
+  position: relative;
+}
+
+li.access::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  width: 40px; /* Adjust as needed */
+  height: 40px; /* Adjust as needed */
+  background: url("access.png") no-repeat;
+  background-size: contain;
+}
