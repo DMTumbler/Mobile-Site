@@ -41,6 +41,21 @@ hr {
     0 6px 6px rgba(0, 0, 0, 0.19);
 }
 
+.featured-image-left {
+  display: flex;
+  margin: auto;
+  width: 50%;
+  float: left;
+  max-width: 600px;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border: 3px solid #902d41;
+  border-radius: 5px;
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.23),
+    0 6px 6px rgba(0, 0, 0, 0.19);
+}
 .logo {
   display: block;
   margin-left: auto;
